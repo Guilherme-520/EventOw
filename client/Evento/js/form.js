@@ -17,17 +17,6 @@ const closeBtn = document.querySelector(".close-btn");
 
 
 
-const organizador = document.getElementById("emailOrg").value
-const editor = document.getElementById("emailEdt").value
-const nomeEvento = document.getElementById("nmEvento").value
-const categoria = document.getElementById("catEvento").value
-const edicao = document.getElementById("nEdicao").value
-const descricao = document.getElementById("DescEvento").value
-const dInicio = document.getElementById("dataini").value
-const dFinal = document.getElementById("datafim").value
-const area = document.getElementById("area").value
-const tipo = "Presencial"
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
     // checkInputs(); -> comentei, pois precisa fazer a verifição dos inputs
@@ -180,6 +169,18 @@ function toggleOptions() {
 
 
 function criarEvento(){
+  
+
+const organizador = document.getElementById("emailOrg").value
+const editor = document.getElementById("emailEdt").value
+const nomeEvento = document.getElementById("nmEvento").value
+const categoria = document.getElementById("catEvento").value
+const edicao = document.getElementById("nEdicao").value
+const descricao = document.getElementById("DescEvento").value
+const dInicio = document.getElementById("dataini").value
+const dFinal = document.getElementById("datafim").value
+const area = document.getElementById("area").value
+const tipo = "Presencial"
 
   console.log(nomeEvento, categoria, edicao, descricao, area, dInicio, dFinal, tipo)
     
