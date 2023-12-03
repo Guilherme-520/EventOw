@@ -167,20 +167,13 @@ function toggleOptions() {
 
 
 function editarPerfil() {
-  const id = 1
+  const id = 5
   
   
   const nome = document.getElementById("nome").value;
-  const Email = document.getElementById("email").value;
-  const senha = document.getElementById("senha").value;
-  const insti = document.getElementById("instituicao").innerText;
 
   axios.put("http://localhost:3001/ouvinte/"+id, {
     nome: nome,
-    email: Email,
-    senha: senha,
-    instituicao: insti,
-    funcao: "Ouvinte"
  
  })
  .then(function (response) {

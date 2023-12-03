@@ -11,7 +11,7 @@ options = wrapper.querySelector(".options");
 const atribuir = document.getElementById('.atribuir');
 const chk = document.getElementById('chk');
 
-const func = "Ouvinte"
+const func = "Organizador"
 
 //Modal começa aqui
 form.addEventListener("submit", (e) => {
@@ -136,7 +136,7 @@ chk.addEventListener('change', () => {
 function cadOrganizador() {
   
   console.log(func)
-  const id = 1
+  const id = 5
 
   axios.put("http://localhost:3001/ouvinte/"+id, {
    funcao: func
