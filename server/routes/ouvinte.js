@@ -8,6 +8,13 @@ router.get('/', async(req, res)=>{
     res.json(ouvintes)
 })
 
+
+router.get('/:id', async(req, res)=>{
+  const id = req.params.id;
+  const ouvintes = await ouvinte.findByPk(id);
+  res.json(ouvintes)
+})
+
 router.post("/", async(req, res)=>{
     const novo = req.body
 

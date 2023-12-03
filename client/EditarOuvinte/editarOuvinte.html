@@ -107,58 +107,58 @@
     <div class="container">
         <div class="logo">
             <img src="../EditarOuvinte/img/EventOW.png" alt="Logo do EventOW">
-        </div>
-
-        <form id="form" class="form">
+          </div>
+          
+          <form id="form" class="form">
             <fieldset id="step-1">
                 <div class="header1">
                     <h2>Edição</h2>
                     <p>Atualize as suas informações</p>
                 </div>
-
+          
                 <div class="form-control nome">
                     <input type="text" id="nome" required="required"/>
                     <span>Nome Completo</span>
                 </div>
-
+          
                 <div class="form-control email">
                     <input type="email" id="email" required="required"/>
                     <span>Email</span>
                 </div>
-
+          
                 <div class="step-1 step">
                     <button type="button" id="prox" onclick="nextStep('step-1', 'step-2')">Próximo</button>
                 </div>
-
+          
             </fieldset>
-
+          
             <fieldset id="step-2" style="display: none;">
                 <div class="header2">
                     <h2>Edição</h2>
                     <p>Edite se necessário</p>
                 </div>
-
+          
                 <div class="form-control senha">
                     <input type="password" id="senha" required="required"/>
                     <span>Senha</span>
                 </div>
-
+          
                 <div class="form-control confirm">
                     <input type="password" id="confirm_senha" required="required"/>
                     <span>Confirme a Senha</span>
                 </div>
-
+          
                 <div class="step-2 step">
                     <button type="button" id="prox" onclick="nextStep('step-2', 'step-3')">Próximo</button>
                 </div>
             </fieldset>
-
+          
             <fieldset id="step-3" style="display: none;">
                 <div class="header3">
                     <h2>Edição</h2>
                     <p>Edite a sua Instituição se necessário:</p>
                 </div>
-
+          
                 <div class="wrapper instituicao">
                     <div class="select-btn">
                         <label id="instituicao">Instituição</label>
@@ -186,14 +186,15 @@
                             <option value="chair" disabled>Chair</option>
                             <option value="ouvinte" selected>Ouvinte</option>
                         </select>
-                  </div>     
-
+                </div>     
+          
                 <div class="atribuir">
                     <button type="submit" id="atualizar" onclick="editarPerfil()" class="show-modal">Atualizar</button>
                 </div>
-
+          
             </fieldset>
-        </form>
+          </form>
+        
     </div>
 
     <!--Modal de confirmação-->

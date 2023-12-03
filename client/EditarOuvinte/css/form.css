@@ -745,3 +745,24 @@ li.selected {
     text-decoration: none;
     color: #000;
 }
+
+#atualizar {
+    background: #007AA4;
+    border: none;
+    font-size: 14px;
+    font-weight: 400px;
+    text-decoration: none;
+    color: #ffff;
+    border-radius: 5px;
+    position: absolute;
+    width: 100px;
+    bottom: 70px;
+    right: 30px;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#atualizar:hover {
+    background-color: #265df2;
+}

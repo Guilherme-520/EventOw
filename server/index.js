@@ -13,9 +13,7 @@ app.use("/evento", evento)
 
 const ouvinte = require('./routes/ouvinte')
 app.use("/ouvinte", ouvinte)
-
-const editarOuvinte = require('./routes/ouvinte')
-app.use("/ouvinte/:id", editarOuvinte)
+app.use("/ouvinte/:id", ouvinte)
 
 db.sequelize.sync().then(()=>{
     app.listen(3001,()=>{

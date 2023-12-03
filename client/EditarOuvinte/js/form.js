@@ -15,6 +15,12 @@ const overlay = document.querySelector(".overlay");
 const modalBox = document.querySelector(".modal-box");
 const closeBtn = document.querySelector(".close-btn");
 
+
+
+const id = 5
+const container = document.getElementsByClassName("container")
+
+
 form.addEventListener("submit", (e) => {
   e.preventDefault();
     // checkInputs(); -> comentei, pois precisa fazer a verifição dos inputs
@@ -165,15 +171,46 @@ function toggleOptions() {
   // Adicione aqui a lógica para alternar as opções
 }
 
+function carregarDados(){
+
+let nome;
+let emailB;
+let senhaB;
+let instiB;
+
+  axios.get("http://localhost:3001/ouvinte/"+id,).then((res)=>{
+    let dadosB = res.data
+    nome = dadosB.nome
+    emailB = dadosB.email
+    senhaB = dadosB.senha
+    instiB = dadosB.instituicao
+
+    
+  document.getElementById("nome").value = nome;
+  document.getElementById("email").value = emailB
+  document.getElementById("senha").value = senhaB
+  document.getElementById("instituicao").innerText = instiB
+
+  })
+
+ 
+}
+
+
+carregarDados()
 
 function editarPerfil() {
-  const id = 5
   
-  
-  const nome = document.getElementById("nome").value;
+  const nome = document.getElementById("nome").value
+  const emailB = document.getElementById("email").value
+  const senhaB = document.getElementById("senha").value
+  const insti = document.getElementById("instituicao").innerHTML
 
   axios.put("http://localhost:3001/ouvinte/"+id, {
     nome: nome,
+    email: emailB,
+    senha: senhaB,
+    instituicao: insti
  
  })
  .then(function (response) {
