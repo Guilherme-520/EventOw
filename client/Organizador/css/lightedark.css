@@ -1,0 +1,57 @@
+body.dark{
+  background: #000;
+}
+
+.checkbox{
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 5%;
+  right: 5%;
+  padding: 5px;
+  position: fixed;
+  height: 18px;
+  width: 42px;
+  transform: scale(1.5);
+}
+
+.label i{
+  font-size: 10px;
+  text-align: center;
+}
+
+.label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 14px;
+  width: 14px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball{
+  transform: translateX(24px);
+}
+
+.bi-sun{
+  color: #E5F5FF;
+}
+
+.bi-moon{
+  color: #E5F5FF;
+}
+
+.dark i.bi-chat-dots{
+  color: #fff;
+}

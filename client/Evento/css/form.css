@@ -1,0 +1,826 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eee;
+}
+
+.container {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 69%;
+    margin: 5%;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.212);
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 3rem;
+}
+
+fieldset {
+    border: none;
+}
+
+.logo {
+    text-align: center;
+}
+
+.logo img {
+    position: relative;
+    top: 50px;
+    width: 25%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* cabeçalho do fielset 1 */
+
+.container .header1 h2 {
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    position: relative;
+    top: 50px;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    font-size: 26px;
+}
+ 
+.container .header1 p {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    left: 3%;
+    top: 55px;
+    width: 370px;
+    max-width: 100%;
+    height: auto;
+    font-size: 14px;
+}
+
+/* Posição dos campos container-1 */
+
+.container .form .form-control.nome{
+    top: 220px;
+    left: 25px;
+    position: absolute;
+    width: 250px;
+}
+
+.container .form .form-control.email{
+    margin-top: 180px;
+    left: 25px;
+    position: absolute;
+    width: 250px;
+}
+
+.container .form .form-control.categ{
+    margin-top: 180px;
+    left: 25px;
+    position: absolute;
+    width: 250px;
+}
+
+.container .form .form-control.edicao{
+    margin-top: 256px;
+    left: 25px;
+    position: absolute;
+    width: 250px;
+}
+
+.container .form .form-control.desc{
+    margin-top: 332px;
+    left: 25px;
+    position: absolute;
+    width: 250px;
+}
+/* FORM-CONTROL.NOME */
+
+.form-control.nome label {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 14px;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.nome input {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: #fff;
+    border-radius: 10px;
+    width: 400px;
+    padding: 15px;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.nome input:valid~label,
+.form-control.nome input:focus~label {
+    color: #000;
+    transform: translateX(5px) translateY(-14px);
+    font-size: 14px;
+    padding: 0 10px;
+    background: #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.form-control input:valid,
+.form-control.nome input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* FORM-CONTROL.EMAIL */
+
+.form-control.email label {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 14px;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.email input {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: #fff;
+    border-radius: 10px;
+    width: 400px;
+    padding: 15px;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.email input:valid~label,
+.form-control.email input:focus~label {
+    color: #000;
+    transform: translateX(5px) translateY(-14px);
+    font-size: 14px;
+    padding: 0 10px;
+    background: #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.form-control.email input:valid,
+.form-control.email input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/*FORM-CONTROL.CATEG*/
+.form-control.categ label {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 14px;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.categ input {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: #fff;
+    border-radius: 10px;
+    width: 400px;
+    padding: 15px;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.categ input:valid~label,
+.form-control.categ input:focus~label {
+    color: #000;
+    transform: translateX(5px) translateY(-14px);
+    font-size: 14px;
+    padding: 0 10px;
+    background: #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.form-control input:valid,
+.form-control.categ input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/*FORM-CONTROL.EDICAO*/
+.form-control.edicao label {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 14px;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.edicao input {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: #fff;
+    border-radius: 10px;
+    width: 400px;
+    padding: 15px;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.edicao input:valid~label,
+.form-control.edicao input:focus~label {
+    color: #000;
+    transform: translateX(5px) translateY(-14px);
+    font-size: 14px;
+    padding: 0 10px;
+    background: #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.form-control input:valid,
+.form-control.categ input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/*FORM-CONTROL.DESC*/
+.form-control.desc label {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 14px;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.desc input {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: #fff;
+    border-radius: 10px;
+    width: 400px;
+    padding: 15px;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.desc input:valid~label,
+.form-control.desc input:focus~label {
+    color: #000;
+    transform: translateX(5px) translateY(-14px);
+    font-size: 14px;
+    padding: 0 10px;
+    background: #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.form-control input:valid,
+.form-control.desc input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* Botão do fieldset-1 de próximo */
+
+#prox {
+    background: #007AA4;
+    border: none;
+    font-size: 14px;
+    font-weight: 400px;
+    text-decoration: none;
+    color: #ffff;
+    border-radius: 5px;
+    position: absolute;
+    width: 100px;
+    bottom: 5% !important; 
+    right: 30px;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#prox:hover {
+    background-color: #265df2;
+}
+
+/* cabeçalho do fielset 2 */
+
+.container .header2 h2 {
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    position: relative;
+    top: 50px;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    font-size: 26px;
+    text-align: center;
+}
+ 
+.container .header2 p {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    left: 3%;
+    top: 55px;
+    width: 370px;
+    max-width: 100%;
+    height: auto;
+    font-size: 14px;
+}
+
+/* Posição dos campos container-2 */
+
+.container .form .form-control.dataini{
+    top: 220px;
+    left: 25px;
+    position: absolute;
+    width: 250px;
+}
+
+.container .form .form-control.datafim{
+    margin-top: 180px;
+    left: 25px;
+    position: absolute;
+    width: 250px;
+}
+
+.container .form .form-control.area{
+    margin-top: 255px;
+    left: 25px;
+    position: absolute;
+    width: 250px;
+}
+
+.container .form .form-control.formato{
+    margin-top: 330px;
+    left: 25px;
+    position: absolute;
+    width: 85px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container .form .radio-form{
+    margin-top: 10px;
+    left: 3px;
+    position: absolute;
+    width:350px;
+    font-family: 'Roboto Condensed', sans-serif;
+    display: flex;
+}
+
+.container .form .form-control.online{
+    margin: 10px;
+}
+
+.container .form .form-control.presencial{
+    margin: 10px;
+}
+
+.container .form .form-control.hibrido{
+    margin: 10px;
+}
+/* FORM-CONTROL.SENHA */
+
+.form-control.datafim label {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 14px;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.datafim input {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: #fff;
+    border-radius: 10px;
+    width: 400px;
+    padding: 15px;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.form-control.datafim label {
+    color: #000;
+    transform: translateX(5px) translateY(-14px);
+    font-size: 14px;
+    padding: 0 10px;
+    background: #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+/*FORM-CONTROL.DATAINI*/
+.form-control.dataini label {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 10px;
+    pointer-events: none;
+    text-decoration: none;
+    font-size: 14px;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.dataini input {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: #fff;
+    border-radius: 10px;
+    width: 400px;
+    padding: 15px;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.dataini label{
+    color: #000;
+    font-size: 14px;
+    padding: 0 10px;
+    background: #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    top: -13%;
+}
+
+/* FORM-CONTROL.AREA */
+
+.form-control.area label {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 14px;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.area input {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: #fff;
+    border-radius: 10px;
+    width: 400px;
+    padding: 15px;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.area input:valid~label,
+.form-control.area input:focus~label {
+    color: #000;
+    transform: translateX(5px) translateY(-14px);
+    font-size: 14px;
+    padding: 0 10px;
+    background: #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.form-control.confirm input:valid,
+.form-control.confirm input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* Botão do fieldset-2 de próximo */
+
+#prox {
+    background: #007AA4;
+    border: none;
+    font-size: 14px;
+    font-weight: 400px;
+    text-decoration: none;
+    color: #ffff;
+    border-radius: 5px;
+    position: absolute;
+    width: 100px;
+    bottom: 70px;
+    right: 30px;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#prox:hover {
+    background-color: #265df2;
+}
+
+/* cabeçalho do fielset 3 */
+
+.container .header3 h2 {
+    font-family: "Google Sans", "Noto Sans Myanmar UI", arial, sans-serif;
+    position: relative;
+    top: 50px;
+    width: 400px;
+    max-width: 100%;
+    height: auto;
+    font-size: 26px;
+}
+ 
+.container .header3 p {
+    font-family: 'Nunito', sans-serif;
+    position: relative;
+    left: 3%;
+    top: 55px;
+    width: 370px;
+    max-width: 100%;
+    height: auto;
+    font-size: 14px;
+}
+
+/* Posição dos campos container-3 */
+
+.container .form .form-control.emailorg{
+    top: 40%;
+    left: 25px;
+    position: absolute;
+    width: 250px;
+}
+
+.container .form .form-control.emailchef{
+    margin-top: 43%;
+    left: 25px;
+    position: absolute;
+    width: 250px;
+}
+
+/* FORM-CONTROL.EMAILORG */
+
+.form-control.emailorg label {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 14px;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.emailorg input {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: #fff;
+    border-radius: 10px;
+    width: 400px;
+    padding: 15px;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.emailorg input:valid~label,
+.form-control.emailorg input:focus~label {
+    color: #000;
+    transform: translateX(5px) translateY(-14px);
+    font-size: 14px;
+    padding: 0 10px;
+    background: #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.form-control.emailorg input:valid,
+.form-control.emailorg input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* FORM-CONTROL.EMAILCHEF */
+
+.form-control.emailchef label {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 14px;
+    color: #000;
+    transition: 0.5s;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.emailchef input {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    background: #fff;
+    border-radius: 10px;
+    width: 400px;
+    padding: 15px;
+    outline: none;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.form-control.emailchef input:valid~label,
+.form-control.emailchef input:focus~label {
+    color: #000;
+    transform: translateX(5px) translateY(-14px);
+    font-size: 14px;
+    padding: 0 10px;
+    background: #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+
+.form-control.emailchef input:valid,
+.form-control.emailchef input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+/* Botão criar */
+
+#criar {
+    background: #007AA4;
+    border: none;
+    font-size: 14px;
+    font-weight: 400px;
+    text-decoration: none;
+    color: #ffff;
+    border-radius: 5px;
+    position: absolute;
+    width: 100px;
+    bottom: 150px;
+    right: 30px;
+    padding: 10px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#criar:hover {
+    background-color: #265df2;
+}
+
+/* Modal de confirmação do formulário */
+.modal-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.modal-section.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-box {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 380px;
+    width: 100%;
+    padding: 30px 20px;
+    border-radius: 24px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.modal-section.active .modal-box {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-box i {
+    font-size: 70px;
+    color: #4070f4;
+}
+
+.modal-box h2 {
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #333;
+    text-align: center;
+}
+
+.modal-box h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modal-box button {
+    padding: 6px 12px;
+    font-size: 14px;
+    margin: 0 10px;
+    width: 8rem;
+    padding: 10px;
+}
+
+.modal-box .buttons {
+    margin-top: 25px;
+}
+
+.btn {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffff;
+    padding: 14px 22px;
+    border: none;
+    background: #4070f4;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #265df2;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.btn.show-modal,
+.modal-box {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Ajuda, Privacidade e Termos */
+.fim {
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 5%;
+    cursor: pointer;
+    margin-left: 1%;
+}
+
+.fim p {
+    margin-right: 15px;
+}
+
+.fim a {
+    font-size: 14px;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    color: #000;
+}

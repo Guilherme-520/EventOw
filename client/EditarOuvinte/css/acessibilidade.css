@@ -1,0 +1,78 @@
+.acessibilidade{
+    margin: 5%;
+}
+
+#accessibility-btn{
+    position: fixed;
+    right: 10px;
+    top: 55%;
+    background: linear-gradient(to right, #2670DC, #2978E2, #2F80EA);
+    border: none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+}
+
+#accessibility-btn i{
+    font-size: 25px;
+}
+
+#accessibility-menu {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #E5F5FF;
+    padding: 10px;
+    border-top: 1px solid #007bff;
+}
+
+#close-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #000;
+    cursor: pointer;
+}
+
+#close-btn i {
+    font-size: 20px;
+}
+
+#fonte{
+    margin-left: 44%;
+    margin-top: 35px;
+}
+
+#contraste{
+    margin-left: 1px;
+}
+
+.chat{
+    position: fixed;
+    right: 10px;
+    top: 40%;
+    background: linear-gradient(to right, #2670DC, #2978E2, #2F80EA);
+    border: none;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.chat i.bi-chat-square-dots {
+    font-size: 25px;
+    text-align: center;
+}
